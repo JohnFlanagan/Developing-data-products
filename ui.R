@@ -1,4 +1,5 @@
 library(shiny)
+library(shinyapps)
 shinyUI(pageWithSidebar(
         headerPanel("Happiness indicator"),
         sidebarPanel(
