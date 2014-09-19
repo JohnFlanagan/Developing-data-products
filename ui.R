@@ -4,6 +4,8 @@ shinyUI(pageWithSidebar(
         sidebarPanel(
                 numericInput('id1', 'On a scale of 1 - 10, how happy do you feel today?', 
                              0, min = 0, max = 10, step = 1),
+                numericInput('id3', 'What is your yearly disposable income?', 
+                             0, min = 0, max = 100000, step = 1),
                 radioButtons("id2", "Is/was the sun shining today?",
                                    c("Not a lot" = "1",
                                      "A little" = "2",

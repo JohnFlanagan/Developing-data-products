@@ -7,14 +7,18 @@ output: html_document
 
 This is supporting documentation for the Happiness Indicator App developed for the Developing Data Products course.
 
-The app takes input from the user for their level happiness and the level of sunshine on a particular day. Using a (not-so-complex!) formula, an integer result for a happiness score is returned. 
+The app collects and compares data on happiness versus disposable income with the overall objective of proving if there is a definite relationship between money and happiness. 
+
+The app takes input from the user for their level of happiness, their yearly disposable income and the level of sunshine on a particular day. 
+
+Using a very complex formula, an integer result for a happiness score is returned. 
 
 The function used to calculate the happiness score is as follows:
 
 ```{r}
-happinessfnc <- function(id1, id2) {
+happinessfnc <- function(id1, id2, id3) {
         id2 <- as.numeric(id2)
-        round(id1^3 * id2^6 * runif(1, 999,1011),0)
+        round(id1^3 * id2^6 * id3^2 * runif(1, 999,1011),0)
 }
 ```
 
